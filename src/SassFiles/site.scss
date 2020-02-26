@@ -31,14 +31,6 @@ ul.menu {
   padding-right: 30px;
 }
 
-
-ul.postList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .nav-item {
   float: right;
   font-size: 12px;
@@ -166,6 +158,7 @@ h1 {
 
 img.userImage {
   height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
 
@@ -175,6 +168,16 @@ img.postImage {
 
 main {
   text-align: center;
+}
+
+ul.postList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .postContents {
