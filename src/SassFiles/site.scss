@@ -1,5 +1,4 @@
 ﻿
-
 body {
   font-family: sans-serif;
   margin: 0 auto;
@@ -12,32 +11,24 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
-  /*display: flex;
-  /*justify-content: space-between;*/
-  padding-left: 20px;
+  padding: 10px 10px;
 }
 
-.navbar.container.header{
-  display:flex;
-  justify-content: space-between;
-}
-
-a.navbar-brand {
+a.logo {
   font-family: 'Squada One', cursive;
-  padding-top: 15px;
   text-decoration: none;
   color: white;
-  font-size: 27px;
-  justify-self: center;
-  order: -1;
+  font-size: 45px;
 }
 
-ul.navbar-nav.flex-grow-1 {
+ul.menu {
   padding-right: 30px;
-  align-self: flex-end;
 }
 
 
