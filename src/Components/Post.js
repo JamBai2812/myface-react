@@ -1,6 +1,15 @@
-﻿import React from "react";
+﻿import React, {useState, useEffect} from "react";
 
 function Post() {
+    
+    // const [postData, setPostData] = useState(null);
+    //
+    // useEffect(()=> {
+    //     fetch()
+    //         .then(response => setPostData(response.data))
+    // }, []);
+    
+    
     return (
         <li className="post">
             <div className="postContents">
@@ -11,7 +20,7 @@ function Post() {
                 <p>Date posted: </p>
                 <p>Time posted: </p>
             </div>
-            
+
         </li>
     );
 }
