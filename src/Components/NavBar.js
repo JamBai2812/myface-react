@@ -1,27 +1,24 @@
 ﻿import React from "react";
+import {Link} from 'react-router-dom';
 function NavBar(){
 
     return (
 
             <nav>
-                <a className="logo" asp-area="" asp-controller="Home" asp-action="Index">MyFace</a>
+                <Link className="logo" to="/posts">MyFace</Link>
 
                 <ul className="menu">
                     <li className="nav-item">
-                        <a className="nav-link" asp-area="" asp-controller="Posts"
-                           asp-action="PostsPage">Posts</a>
+                        <Link className="nav-link" to="/posts">Posts</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" asp-area="" asp-controller="Users"
-                           asp-action="UsersPage">Users</a>
+                        <Link className="nav-link" to="/users">Users</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" asp-area="" asp-controller="Home"
-                           asp-action="Privacy">Privacy</a>
+                        <Link className="nav-link" to="/privacy">Privacy</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" asp-area="" asp-controller="Posts"
-                           asp-action="CreatePostPage">Create</a>
+                        <Link className="nav-link" to="/create">Create</Link>
                     </li>
                 </ul>
             </nav>
