@@ -185,6 +185,18 @@ ul.postList {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+}
+
+.dateTimePosted{
+  text-align: center;
+  margin:0;
+  padding: 15px;
+}
+
+.likesDislikes{
+  margin: 0;
+  
 }
 
 .postSeparator {
