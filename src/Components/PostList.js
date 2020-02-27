@@ -1,7 +1,7 @@
 ﻿import React, {useState, useEffect} from "react";
 import {Post} from "./Post";
 
-function PostList() {
+function PostList(props) {
 
     const [postData, setPostData] = useState(null);
 
@@ -14,7 +14,7 @@ function PostList() {
     if (!postData) {
         return <div>waiting for data......</div>
     }
-    
+
     return (
         <ul className="postList">
             {postData.map(post =>
@@ -22,8 +22,6 @@ function PostList() {
             )}
         </ul>
     );
-
-
 }
 
 export {PostList};
