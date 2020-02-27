@@ -19,17 +19,27 @@ export function MyForm(){
     }
     
     function handleSubmit(event){
-        alert('A new post was created');
+        
+        console.log(message);
+        console.log(imageUrl);
+        console.log(userId);
+        
+        
             fetch("https://localhost:5001/posts/create", {
                 method: 'POST',
-                body: {
-                    'message': message,
-                    'userId': userId,
-                    'imageUrl': imageUrl
-                }
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: message,
+                    userId: parseInt(userId),
+                    imageUrl: imageUrl
+                })
             })
-                .then(<Redirect to="/posts"/>);
-        
+            .then(response => console.log(response));
+            
+            
+        // alert('A new post was created');
         event.preventDefault();
     }
     
