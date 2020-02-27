@@ -1,4 +1,8 @@
-﻿
+﻿$mainThemeColor: #003366;
+$mainThemeColorLight : lighten($mainThemeColor, 75%);
+$backgroundColor : lighten($mainThemeColor, 80%);
+
+
 body {
   font-family: sans-serif;
   margin: 0 auto;
@@ -7,17 +11,13 @@ body {
 
 nav {
   padding: 10px 16px;
-  background-color: #003366;
+  background-color: $mainThemeColor;
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.container {
-  padding: 10px 10px;
 }
 
 a.logo {
@@ -75,7 +75,7 @@ ul.menu {
   text-decoration: none;
 }
 .header .menu {
-  background-color: #003366;
+  background-color: $mainThemeColor;
   clear: both;
   max-height: 0;
   transition: max-height .4s ease-in;
@@ -151,29 +151,19 @@ ul.menu {
 
 h1 {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 60px;
   padding: 38px;
   font-size: 2em;
   color: white;
-  background-color: #003366;
+  background-color: $mainThemeColor;
 }
 
-.post {
-  display: inline-block;
-}
 
-img.userImage {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-}
-
-img.postImage {
-  width:300px;
-}
 
 main {
   text-align: center;
+  background-color: $mainThemeColorLight;
+  bottom: 100px;
 }
 
 ul.postList {
@@ -186,12 +176,20 @@ ul.postList {
   justify-content: center;
 }
 
+.post {
+   display: inline-block;
+ }
+
 .postContents {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  border: solid 3px $mainThemeColor;
+  border-radius: 5%;
+  margin: 10px;
+  background-color: white;
 }
 
 .dateTimePosted{
@@ -201,8 +199,22 @@ ul.postList {
 }
 
 .likesDislikes{
-  margin: 0;
+  margin: 5px;
   
+}
+
+img.userImage {
+  height: 100px;
+  width: 100px;
+  border: 1px solid $mainThemeColor;
+  border-radius: 50%;
+}
+
+img.postImage {
+  width:300px;
+  border: 1px solid $mainThemeColor;
+  border-radius: 5%;
+  margin: 4px;
 }
 
 .postSeparator {
@@ -233,22 +245,30 @@ textarea#Message {
 }
 
 footer {
-  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: $mainThemeColor;
   color: white;
-  padding: 10px 0 10px 0;
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 10px 0;
+  
 }
 
-a.footerLink {
+.footerText{
+  padding-left: 15px;
+}
+
+.footerLink {
   text-decoration: none;
   color: #fff;
   float: right;
   padding-right: 20px;
 }
 
-a.footerLink:hover {
+.footerLink:hover {
   text-decoration: underline;
   color: #fff;
 }
@@ -292,7 +312,7 @@ a.footerLink:hover {
 }
 
 #myBtn {
-  background-color: #003366;
+  background-color: $mainThemeColor;
   color: white;
   font-size: 30px;
   text-decoration: none;
@@ -300,7 +320,7 @@ a.footerLink:hover {
   right: 4px;
   bottom: 3px;
   border-radius: 40%;
-  border: solid 2px #003366;
+  border: solid 2px $mainThemeColor;
 }
 
 li {
@@ -327,47 +347,41 @@ input {
   width: 300px;
 }
 }
-@media (min-width: 768px){
-.header li {
-  float: left;
-}
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
 
-.header li a {
-  padding: 20px 30px;
-}
+  .header li a {
+    padding: 20px 30px;
+  }
 
-.header .menu {
-  clear: none;
-  float: right;
-  max-height: none;
-}
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
 
-.header .menu-icon {
-  display: none;
-}
+  .header .menu-icon {
+    display: none;
+  }
 
-#myBtn {
-  background-color: #003366;
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-  position: fixed;
-  right: 7px;
-  bottom: 46px;
-  border-radius: 40%;
-  border: solid 2px #003366;
-}
+  #myBtn {
+    background-color: $mainThemeColor;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: fixed;
+    right: 7px;
+    bottom: 46px;
+    border-radius: 40%;
+    border: solid 2px $mainThemeColor;
+  }
 
 
-footer {
-  background-color: #003366;
-  color: white;
-  padding: 10px 0 10px 0;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
+  footer {
+    position: fixed;
+  }
 }
 
 

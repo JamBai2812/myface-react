@@ -2,18 +2,17 @@
 import moment from "moment";
 
 function Post(props) {
-    
-    var postDateTime = moment(props.data.postedAt);
-    var postDate = postDateTime.format("ddd Do MMM YYYY");
-    var postTime = postDateTime.format("h:mm a");
-    
-    
-    
+
+    const postDateTime = moment(props.data.postedAt);
+    const postDate = postDateTime.format("ddd Do MMM YYYY");
+    const postTime = postDateTime.format("h:mm a");
+
+
     return (
         <li className="postContents">
             <h2>{props.data.postedBy.firstName}</h2>
             <img className="userImage" src={props.data.postedBy.profileImageUrl} alt={props.data.postedBy.displayName + " profile picture."}/>
-            <p>{props.data.message}</p>
+            <p className="postMessage">{props.data.message}</p>
             <img className="postImage" src={props.data.imageUrl} alt="Image posted."/>
             <p className="dateTimePosted"><b>Posted:</b> {postDate}<br/>
             at &nbsp;{postTime}

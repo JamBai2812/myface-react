@@ -3,10 +3,8 @@ import {Link} from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="container">
-            <div>
-                &copy; 2020 - MyFace <Link className="footerLink" to="Privacy">Privacy</Link>
-            </div>
+        <footer>
+                <div className="footerText">&copy; 2020 - MyFace</div> <Link className="footerLink" to="Privacy">Privacy</Link>
         </footer>
     );
 }
