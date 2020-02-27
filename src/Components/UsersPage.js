@@ -2,7 +2,7 @@
 
 function UsersPage() {
     return (
-        <main>
+        <main className="fullScreen">
             <h1>
                 Users
             </h1>

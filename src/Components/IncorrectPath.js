@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function IncorrectPath() {
     return (
-        <main>
+        <main className="fullScreen">
             <h1>Page Not Found</h1>
             <p className="pageDoesntExist">
                 Sorry - that page doesn't exist, try these:
