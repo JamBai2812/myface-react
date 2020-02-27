@@ -3,9 +3,9 @@
 
 function CreatePostPage() {
     return (
-        <div>
+        <main>
             <h1>Create Post</h1>
-        </div>
+        </main>
     );
 }
 

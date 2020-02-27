@@ -3,10 +3,10 @@ import {PostList} from "./PostList";
 
 function PostPage() {
     return (
-        <div>
+        <main>
             <h1>News Feed</h1>
             <PostList/>
-        </div>
+        </main>
     );
 }
 

@@ -2,9 +2,10 @@
 
 function PrivacyPage() {
     return (
-        <div>
+        <main>
             <h1>Privacy</h1>
-        </div>
+            <p>Your data is safe with us....</p>
+        </main>
     );
 }
 

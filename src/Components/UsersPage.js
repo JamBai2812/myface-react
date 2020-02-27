@@ -2,11 +2,11 @@
 
 function UsersPage() {
     return (
-        <div>
+        <main>
             <h1>
                 Users
             </h1>
-        </div>
+        </main>
     );
 }
 

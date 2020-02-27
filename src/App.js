@@ -15,28 +15,29 @@ function App() {
         <Router>
             <NavBar/>
             
-            <Switch>
-                <Route path="/posts">
-                    <PostPage/> 
-                </Route>
-                
-                <Route path="/users">
-                    <UsersPage/>
-                </Route>
-                
-                <Route path="/create">
-                    <CreatePostPage/>
-                </Route>
-                
-                <Route path="/privacy">
-                    <PrivacyPage/>
-                </Route>
-                
-                <Route path="">
-                    <IncorrectPath/>
-                </Route>
-            </Switch>
+                <Switch>
+                    <Route path="/posts">
+                        <PostPage/>
+                    </Route>
 
+                    <Route path="/users">
+                        <UsersPage/>
+                    </Route>
+
+                    <Route path="/create">
+                        <CreatePostPage/>
+                    </Route>
+
+                    <Route path="/privacy">
+                        <PrivacyPage/>
+                    </Route>
+
+                    <Route path="">
+                        <IncorrectPath/>
+                    </Route>
+                </Switch>
+            
+            
 
             <Footer/>
         </Router>

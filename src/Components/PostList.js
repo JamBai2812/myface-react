@@ -21,8 +21,6 @@ function PostList() {
                 <Post data={post}/>
             )}
         </ul>
-
-
     );
 
 
