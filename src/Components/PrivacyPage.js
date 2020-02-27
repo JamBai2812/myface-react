@@ -2,7 +2,7 @@
 
 function PrivacyPage() {
     return (
-        <main className="privacyText">
+        <main className="fullScreen">
             <div >
                 <h1>Privacy</h1>
                 <p>Your data is safe with us....</p>
