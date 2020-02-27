@@ -8,30 +8,33 @@ import {NavBar} from "./Components/NavBar";
 import {IncorrectPath} from "./Components/IncorrectPath";
 import {UsersPage} from "./Components/UsersPage";
 import {CreatePostPage} from "./Components/CreatePostPage";
+import {PrivacyPage} from "./Components/PrivacyPage";
 
 function App() {
     return (
         <Router>
             <NavBar/>
             
-
             <Switch>
                 <Route path="/posts">
                     <PostPage/> 
                 </Route>
+                
                 <Route path="/users">
                     <UsersPage/>
                 </Route>
+                
                 <Route path="/create">
                     <CreatePostPage/>
                 </Route>
+                
+                <Route path="/privacy">
+                    <PrivacyPage/>
+                </Route>
+                
                 <Route path="">
                     <IncorrectPath/>
                 </Route>
-
-
-
-
             </Switch>
 
 
