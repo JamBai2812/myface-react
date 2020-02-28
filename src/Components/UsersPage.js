@@ -1,11 +1,13 @@
 ﻿import React from "react";
+import {UserProfileList} from "./UserProfileList";
 
 function UsersPage() {
     return (
-        <main className="fullScreen">
+        <main>
             <h1>
                 Users
             </h1>
+            <UserProfileList/>
         </main>
     );
 }
