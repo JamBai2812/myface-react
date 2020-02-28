@@ -8,6 +8,16 @@ img.userImage {
   border: 1px solid $mainThemeColor;
   border-radius: 50%;
 }
+
+.userProfileName{
+  color: white;
+  background-color: $mainThemeColor;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 20%;
+}
+
 .userProfileContents {
   display: flex;
   width: 250px;
