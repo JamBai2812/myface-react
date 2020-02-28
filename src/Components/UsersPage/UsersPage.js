@@ -1,5 +1,5 @@
-﻿import React from "react";
-import {UserProfileList} from "./UserProfileList";
+﻿﻿import React from "react";
+import {UserProfileList} from "../UserProfileList/UserProfileList";
 
 function UsersPage() {
     return (

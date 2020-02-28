@@ -1,5 +1,6 @@
-﻿import React, {useState, useEffect} from "react";
-import {Post} from "./Post";
+﻿﻿import React, {useState, useEffect} from "react";
+import {Post} from "../Post/Post";
+import './PostList.scss';
 
 function PostList(props) {
 

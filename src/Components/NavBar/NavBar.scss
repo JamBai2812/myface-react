@@ -1,0 +1,59 @@
+﻿@import "../OtherSassFiles/Constants";
+
+
+nav {
+  padding: 10px 16px;
+  background-color: $mainThemeColor;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+a.logo {
+  font-family: 'Squada One', cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+
+ul.menu {
+  padding-right: 30px;
+}
+
+.nav-item {
+  float: right;
+  font-size: 12px;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 2px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .nav-link {
+    float: right;
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1500px) {
+  a.navbar-brand {
+    font-size: 47px;
+    padding-top: 4px;
+  }
+}

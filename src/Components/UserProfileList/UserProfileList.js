@@ -1,5 +1,6 @@
-﻿import React, {useState, useEffect} from "react";
-import {UserProfile} from "./UserProfile";
+﻿﻿import React, {useState, useEffect} from "react";
+import {UserProfile} from "../UserProfile/UserProfile";
+import "./UserProfileList.scss";
 
 function UserProfileList(props) {
 
@@ -16,7 +17,7 @@ function UserProfileList(props) {
     }
 
     return (
-        <ul className="postList">
+        <ul className="userProfileList">
             {userData.map(profile =>
                 <UserProfile data={profile}/>
             )}

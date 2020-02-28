@@ -1,5 +1,6 @@
-﻿import React from "react";
-import {MyForm} from "./CreatePostForm";
+﻿﻿import React from "react";
+import {MyForm} from "../CreatePostForm/CreatePostForm";
+import './CreatePostPage.scss';
 
 
 function CreatePostPage() {

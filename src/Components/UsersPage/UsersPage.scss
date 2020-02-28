@@ -1,0 +1,37 @@
+﻿@import "../OtherSassFiles/Constants";
+
+
+
+.userProfileName{
+  color: white;
+  background-color: $mainThemeColor;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 20%;
+}
+
+.userProfileEmail{
+  font-size: 12px;
+}
+
+.userProfileUsername{
+
+}
+
+img.userImage {
+  height: 100px;
+  width: 100px;
+  border: 1px solid $mainThemeColor;
+  border-radius: 50%;
+}
+
+//img.userImage:hover{
+//  height: 150px;
+//  width: 150px;
+//  transition-timing-function: ease-in-out;
+//}
+
+.coverImageContainer{
+  background-size: cover;
+}

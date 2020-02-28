@@ -1,0 +1,30 @@
+﻿﻿@import "Constants";
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  padding: 38px;
+  font-size: 2em;
+  color: white;
+  background-color: $mainThemeColor;
+}
+
+.fullScreen{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+main {
+  text-align: center;
+  background-color: $mainThemeColorLight;
+  padding-bottom: 50px;
+}

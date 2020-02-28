@@ -1,0 +1,49 @@
+﻿﻿@import "../OtherSassFiles/Constants";
+
+.post {
+  display: inline-block;
+}
+.postContents {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  border: solid 3px $mainThemeColor;
+  border-radius: 5%;
+  margin: 10px;
+  background-color: white;
+}
+
+.dateTimePosted{
+  text-align: center;
+  margin:0;
+  padding: 15px;
+}
+
+.likesDislikes{
+  margin: 5px;
+}
+
+img.userImage {
+  height: 100px;
+  width: 100px;
+  border: 1px solid $mainThemeColor;
+  border-radius: 50%;
+}
+
+img.postImage {
+  width:290px;
+  border: 1px solid $mainThemeColor;
+  border-radius: 5%;
+  margin: 4px;
+}
+
+////////////////////
+@media (min-width: 1500px) {
+  .pageContent {
+    width: 1370px;
+    display: inline-block;
+  }
+}
