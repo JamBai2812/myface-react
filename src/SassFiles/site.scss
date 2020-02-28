@@ -189,6 +189,7 @@ ul.postList {
 .postContents {
   display: flex;
   flex-direction: column;
+  width: 290px;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
@@ -196,6 +197,36 @@ ul.postList {
   border-radius: 5%;
   margin: 10px;
   background-color: white;
+}
+
+.userProfileContents {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  border: solid 3px $mainThemeColor;
+  border-radius: 5%;
+  margin: 10px;
+  background-color: white;
+}
+
+.userProfileName{
+  color: white;
+  background-color: $mainThemeColor;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 20%;
+}
+
+.userProfileEmail{
+  font-size: 12px;
+}
+
+.userProfileUsername{
+  
 }
 
 .dateTimePosted{
@@ -215,11 +246,21 @@ img.userImage {
   border-radius: 50%;
 }
 
+//img.userImage:hover{
+//  height: 150px;
+//  width: 150px;
+//  transition-timing-function: ease-in-out;
+//}
+
 img.postImage {
   width:300px;
   border: 1px solid $mainThemeColor;
   border-radius: 5%;
   margin: 4px;
+}
+
+.coverImageContainer{
+  background-size: cover;
 }
 
 .postSeparator {
