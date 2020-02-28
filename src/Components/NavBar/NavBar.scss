@@ -21,7 +21,8 @@ a.logo {
 }
 
 ul.menu {
-  padding-right: 30px;
+  padding-right: 20px;
+  padding-left: 0;
 }
 
 .nav-item {
@@ -47,6 +48,10 @@ ul.menu {
   .nav-link {
     float: right;
     font-size: 16px;
+  }
+  
+  .menu{
+    padding-right: 30px;
   }
 }
 
