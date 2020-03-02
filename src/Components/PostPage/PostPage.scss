@@ -1,0 +1,13 @@
+﻿﻿@import "../OtherSassFiles/Constants";
+
+#createPostButton{
+  background-color: $mainThemeColor;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  position: fixed;
+  right: 4px;
+  bottom: 3px;
+  border-radius: 40%;
+  border: solid 2px $mainThemeColor;
+}
